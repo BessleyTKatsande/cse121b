@@ -22,12 +22,20 @@ imageElement.setAttribute('src', profilePicture);
 
 
 /* Step 5 - Array */
-const food = ["Rice", "Chicken", "Pizza", "Beef", "Fish", "Noodles", "Cake"];
+/*1*/ const favfood = ["Rice", "Chicken", "Pizza", "Beef", "Fish", "Noodles", "Cake"];
 
-document.querySelector(food).innerHTML = food;
+/*2*/ document.querySelector('#food').innerHTML = favfood;
 
-const food2 =["Oxtail", "Steak", "Pie", "Lasagna", "Ice cream"];
+/*3*/ const food2 = "Lasagna";
 
-food.push(food2)
+/*4*/ favfood.push(food2);
 
-foodElement.innerHTML += `<br>${favFoods}`
+/*5*/ foodElement.innerHTML += `<br>${favfood}`
+
+/*6*/ favfood.shift();
+
+/*7*/ foodElement.innerHTML += `<br>${favfood}`
+
+/*8*/ let popped = favfood.pop();
+
+/*9*/ foodElement.innerHTML += `<br>${favfood}`
