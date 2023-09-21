@@ -18,24 +18,24 @@ const imageElement =  document.getElementById('image');
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 let text = document.getElementById('currentYear').textContent;
 imageElement.setAttribute('src', profilePicture);
-/*imageElement.setAttribute('alt', Profile image of )
+imageElement.setAttribute('alt', "Placeholder Image");
 
 
 /* Step 5 - Array */
-/*1*/ const favfood = ["Rice", "Chicken", "Pizza", "Beef", "Fish", "Noodles", "Cake"];
+/*1*/ const food = ['Rice', 'Chicken', 'Pizza', 'Beef', 'Fish', 'Noodles', 'Cake'];
 
-/*2*/ document.querySelector('#food').innerHTML = favfood;
+/*2*/ document.querySelector('#food').textContent = food;
 
-/*3*/ const food2 = "Lasagna";
+/*3*/ const food2 = 'Lasagna';
 
-/*4*/ favfood.push(food2);
+/*4*/ food.push(food2);
 
-/*5*/ foodElement.innerHTML += `<br>${favfood}`
+/*5*/ document.querySelector('#food').textContent = food;
 
-/*6*/ favfood.shift();
+/*6*/ food.shift();
 
-/*7*/ foodElement.innerHTML += `<br>${favfood}`
+/*7*/ document.querySelector('#food').textContent = food;
 
-/*8*/ let popped = favfood.pop();
+/*8*/ let popped = food.pop();
 
-/*9*/ foodElement.innerHTML += `<br>${favfood}`
+/*9*/ document.querySelector('#food').textContent = food;
