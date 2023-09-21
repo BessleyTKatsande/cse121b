@@ -5,28 +5,29 @@
 /* Step 2 - Variables */
 const fullName = 'Bessley Tawanda Katsande';
 const currentYear = 2023;
-let profilePicture = 'images/placeholder.jpg';
+const profilePicture = 'images/placeholder.jpg';
 
 
 /* Step 3 - Element Variables */
 const nameElement =  document.getElementById('name');
 const foodElement =  document.getElementById('food');
-const yearElement =  document.querySelector('#year');
+const yearElement =  document.querySelector('year');
 const imageElement =  document.getElementById('image');
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 let text = document.getElementById('currentYear').textContent;
 imageElement.setAttribute('src', profilePicture);
-imageElement.setAttribute('alt', Profile image of [Bessley Tawanda Katsande])
+/*imageElement.setAttribute('alt', Profile image of )
 
 
 /* Step 5 - Array */
-let food = ["Rice", "Chicken", "Pizza", "Beef", "Fish", "Noodles", "Cake"];
+const food = ["Rice", "Chicken", "Pizza", "Beef", "Fish", "Noodles", "Cake"];
 
-document.querySelector(#food).innerHTML = food
+document.querySelector(food).innerHTML = food;
 
-const food2 =["Oxtail", "Steak", "Pie", "Lasagna", "Ice cream"]
+const food2 =["Oxtail", "Steak", "Pie", "Lasagna", "Ice cream"];
 
+food.push(food2)
 
-
+foodElement.innerHTML += `<br>${favFoods}`
