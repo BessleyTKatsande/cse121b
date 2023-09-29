@@ -91,4 +91,4 @@ numberslist.map(number => number * 2);
 
 document.querySelector('#sumofMultiplied').textContent = numberslist
 .map(number => number * 2)
-.reduce((sum, number) => sum + number, 0);
+.reduce((sum, number) => sum + number);
